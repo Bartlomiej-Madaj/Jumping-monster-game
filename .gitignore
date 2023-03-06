@@ -4,6 +4,9 @@ jspm_packages/
 dist
 public
 
+.firebaserc
+firebase.json
+
 .env
 .env.development.local
 .env.test.local
