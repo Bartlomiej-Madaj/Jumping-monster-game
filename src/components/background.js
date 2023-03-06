@@ -28,6 +28,7 @@ export class Background {
     );
   }
   update() {
+    this.draw()
     this.positionX -= this.speed;
     if (this.positionX < -this.imageWidth) this.positionX = 0;
   }

@@ -129,12 +129,11 @@ function animate(timeStamp) {
   const deltaTime = timeStamp - lastTime;
   lastTime = timeStamp;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  background.draw();
-  game.update(deltaTime);
   background.update();
+  Controller.isStart && game.update(deltaTime);
   requestAnimationFrame(animate);
 }
-
+Controller.startGame()
 animate(0);
 
 

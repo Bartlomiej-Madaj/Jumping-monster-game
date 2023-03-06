@@ -12,13 +12,66 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 #canvas1 {
     font-family: 'Bangers', cursive;
     background-color: black;
     margin: 5rem 5rem 0;
+}
+
+.background {
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(7, 7, 7, 0.674);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+}
+
+.background > span {
+    width: 25rem;
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.background > div {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+}
+
+.background > div > div {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.background > div span {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.background > div:first-of-type > div  {
+    background-image: url('../../public/images/keys/w_key.png');
+}
+.background > div:nth-of-type(2) > div  {
+    background-image: url('../../public/images/keys/d_key.png');
+}
+.background > div:last-of-type > div {
+    background-image: url('../../public/images/keys/a_key.png');
 }
 
 #canvas2 {

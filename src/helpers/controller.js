@@ -57,6 +57,14 @@ export class Controller {
       ScoreBoard.resetCounter();
     }
   };
+  static isStart = false
+  static startGame() {
+    const backgroundr = document.querySelector(".background");
+    backgroundr.addEventListener("click", () => {
+      backgroundr.classList.remove("background");
+      this.isStart = true
+    });
+  }
   static isDebug = false;
   static debug() {
     if (!this.isDebug) {
