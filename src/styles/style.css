@@ -30,19 +30,33 @@ body{
     flex-direction: column;
     padding-top: 5rem;
     align-items: center;
+    font-family: 'Bangers', cursive;
 }
 
 .background > span {
     width: 25rem;
-    font-family: 'Bangers', cursive;
     font-size: 2.5rem;
     padding: 0 1rem;
     color: white;
     text-transform: uppercase;
 }
 
+.background > h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: white;
+    white-space: normal;
+    letter-spacing: 0.2rem;
+}
+
+.background > span:first-of-type{
+    width:25rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
 .background > div {
-    width: 25rem;
+    width: fit-content;
     display: flex;
     align-items: center;
     margin: 0.8rem 0;

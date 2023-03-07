@@ -59,9 +59,9 @@ export class Controller {
   };
   static isStart = false
   static startGame() {
-    const backgroundr = document.querySelector(".background");
-    backgroundr.addEventListener("click", () => {
-      backgroundr.classList.remove("background");
+    const startScreen = document.querySelector(".background");
+    startScreen.addEventListener("click", () => {
+      startScreen.remove();
       this.isStart = true
     });
   }
@@ -74,7 +74,8 @@ export class Controller {
   }
   static debugHandler = (e) => {
     if (e.key === "z") {
-      this.isDebug = !this.isDebug;
+      //debug
+      // this.isDebug = !this.isDebug;
     }
   };
 }

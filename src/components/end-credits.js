@@ -8,11 +8,11 @@ export class EndCredits {
       message1 = "You have to train more";
       message2 = `Your score: ${ScoreBoard.score}`;
     }
-    if (ScoreBoard.score >= 10 && ScoreBoard.score < 100) {
+    if (ScoreBoard.score >= 10 && ScoreBoard.score < 30) {
       message1 = "Good Job!!";
       message2 = `Your score: ${ScoreBoard.score}`;
-    } else if (ScoreBoard.score >= 100) {
-      message1 = "You are amazing!!";
+    } else if (ScoreBoard.score >= 30) {
+      message1 = "You are MONSTER!!!";
       message2 = `Your score: ${ScoreBoard.score}`;
     }
     ctx.save();
